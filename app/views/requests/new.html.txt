@@ -1,0 +1,16 @@
+
+
+<div class="booyah-box col-10 offset-1">
+    <h2> Enter your request Here !! </h2>
+
+
+      <div class="form-actions">
+
+        <%= simple_form_for @wish, url: new_request_path do |f| %>
+          <%= f.input :text %>
+          <br />
+          <%= f.submit 'Create', class: 'btn btn-danger'  %>
+        <% end %>
+      </div>
+
+    </div>

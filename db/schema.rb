@@ -17,8 +17,6 @@ ActiveRecord::Schema.define(version: 2020_03_01_061946) do
 
   create_table "wishes", force: :cascade do |t|
     t.string "text"
-    t.integer "count"
-    t.boolean "false"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,2 +1,9 @@
 
+
 <h2> Enter your request Here !! </h2>
+
+<%= simple_form_for @wish, url: new_request_path do |f| %>
+  <%= f.input :text %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger'  %>
+<% end %>
